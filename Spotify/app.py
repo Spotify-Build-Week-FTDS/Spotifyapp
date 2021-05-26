@@ -5,7 +5,7 @@ Main application/routing file for Spotify Song Suggester
 from os import getenv
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-from .models import DB
+from .models import db
 
 # Creating a Flask App instance
 
