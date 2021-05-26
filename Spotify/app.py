@@ -5,8 +5,6 @@ Main application/routing file for Spotify Song Suggester
 from os import getenv
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
 from .models import DB
 
 # Creating a Flask App instance
@@ -40,6 +38,9 @@ def create_app():
         return render_template("index.html", title="Song Suggester has been refreshed!", )
 
     return app
+
+
+
 
 # TODO: get jinja2 tags in html in order to render app routes
 # TODO: generate model classes with features from csv file

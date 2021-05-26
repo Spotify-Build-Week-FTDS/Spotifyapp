@@ -4,6 +4,9 @@ Handles Connections To Spotify Database
 
 from os import getenv
 import spotipy
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+import pandas as pd
 
 # Aunthentication for use of Spotify's API
 # Using .env file to assign client ID & Cl
@@ -17,9 +20,11 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(SPOTIFY_CLIENT_ID,
                                                            SPOTIFY_CLIENT_KEY_SECRET))
 
 
+df = pd.read_csv("")
+conn = 
 
 
-# SPOTIFY_AUTH = spotipy.
-# api = spotipy.API(SPOTIFY_AUTH)
+
+
 
 
