@@ -1,6 +1,7 @@
 # Spotifyapp
 
-Spotify Song Suggester: App designed to predict song choices for users based on similarity of previous song choices.
+
+🎧 Spotify Song Suggester: App designed to predict song choices for users based on similarity of previous song choices.
 
 ☝️ Proposal - What problem does our app solve?
 
