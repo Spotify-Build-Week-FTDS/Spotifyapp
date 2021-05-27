@@ -1,7 +1,7 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials #To access authorised Spotify data
 import requests
-"""cid = '6d40450899dc48c2b04ea25ef23a0cf0'
+cid = '6d40450899dc48c2b04ea25ef23a0cf0'
 secret = '787f733975e64f62ab5463b3e658c613'
 client_id = cid
 client_secret = secret
@@ -10,7 +10,7 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) #spo
 
 
 artist= 'Lester Flatt'
-track= 'Foggy Mountain Breakdown'"""
+track= 'Foggy Mountain Breakdown'
 
 def get_track_id(artist, track):
     track_id = sp.search(q='artist:' + artist + ' track:' + track, type='track')
