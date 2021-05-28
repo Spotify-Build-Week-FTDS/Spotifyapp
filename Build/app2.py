@@ -1,3 +1,5 @@
+import os
+import dotenv 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials #To access authorised Spotify data
 import requests
@@ -5,8 +7,9 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import math
 
-cid = '6d40450899dc48c2b04ea25ef23a0cf0'
-secret = '787f733975e64f62ab5463b3e658c613'
+
+cid = os.getenv('CID')
+secret = os.getenv('SECRET')
 client_id = cid
 client_secret = secret
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
