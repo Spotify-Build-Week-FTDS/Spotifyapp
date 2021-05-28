@@ -1,0 +1,1 @@
+web: gunicorn app.app:server -t 60 --log-file=- --log-level=debug

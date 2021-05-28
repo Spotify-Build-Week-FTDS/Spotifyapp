@@ -1,25 +1,27 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
-
-[packages]
-flask = "*"
-flask-sqlalchemy = "*"
-jinja2 = "*"
-psycopg2-binary = "*"
-pycodestyle = "*"
-numpy = "*"
-pandas = "*"
-python-dotenv = "*"
-google-api-python-client = "*"
-spotipy = "*"
-gunicorn = "*"
-requests = "*"
-matplotlib = "*"
-spacy = "*"
 
 [dev-packages]
 
+[packages]
+dash = "==1.9.1"
+dash-bootstrap-components = "*"
+gunicorn = "*"
+plotly = "*"
+pandas = "*"
+colorama = "*"
+spotipy = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+numpy = "*"
+sklearn = "*"
+tensor = "*"
+flow = "*"
+keras = "*"
+spacy = "*"
+joblib = "*"
+
 [requires]
-python_version = "3.9"
+python_version = "3"
