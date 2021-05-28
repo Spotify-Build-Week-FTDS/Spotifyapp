@@ -1,0 +1,9 @@
+(% extends "index.html" %)
+{% block title %}Form Page{% endblock %}
+{% block conetent %}
+<form action="/data" method = "post">
+<p>Artist <input type = 'text' name = 'Artist' /></p>
+<p>Song <input type = 'text' name = 'Song' /></p>
+<p><input type = 'submit' value = 'Submit' /></p>
+</form>
+{% endblock %}
